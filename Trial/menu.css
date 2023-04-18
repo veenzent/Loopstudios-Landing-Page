@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    display: inline-block;
+    color: #e60a0a;
+    margin-left: 10px;
+}
+
+.nav {
+    background-color: aqua;
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: left .5s ease;
+}
+
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 20px 10px;
+}
+
+.hamb-line {
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+    background-color: #fff;
+    content: " ";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: all .2s ease-out;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.check {
+    display: none;
+}
+
+.check:checked ~ .nav {
+    left: 0;
+}
+
+
+
+
+/* ################################## */
+h1 {
+    color: #06D85f
+}
+
+.box {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 35px;
+    border: 2px solid #e60a0a;
+    border-radius: 20px/50px;
+    text-align: center;
+    background-clip: padding-box;
+}
+
+.button {
+    font-size: 1em;
+    padding: 10px;
+    color: #a0a0a0;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: #06D85F;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70% auto;
+    padding: 20px;
+    background: #06D;
+    border-radius: 5px;
+    width: 40%;
+}

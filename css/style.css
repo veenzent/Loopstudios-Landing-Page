@@ -1,0 +1,251 @@
+/* ###################################### */
+/* HEADER SECTION */
+/* ###################################### */
+.header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section {
+    align-items: center;
+}
+
+.close,
+.menu {
+    display: none;
+}
+
+.main-nav-list {
+    list-style: none;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.main-nav-link {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.hero-text {
+    border: 2px solid hsl(0, 0%, 100%);
+    max-width: 55%;
+    margin: 12.8rem 0;
+    padding: 3.2rem;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 6.2rem;
+    word-spacing: 0.2rem;
+}
+
+.overview-section {
+    margin-bottom: 14rem;
+}
+
+.interactive-vr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+}
+
+.interactive-vr-img {
+    width: 65%;
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+.interactive-vr-text-box {
+    background-color: hsl(0, 0%, 100%);
+    padding: 3.2rem 1.6rem 0 1.6rem;
+    grid-row: 1;
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.interactive-vr-text-caption {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    font-size: 3.4rem;
+    padding: 8.4rem 7rem 0 7rem;
+}
+
+.interactive-vr-text {
+    line-height: 1.8;
+    font-size: 1rem;
+    padding: 0 7.5rem;
+}
+
+.gallery {
+    margin-bottom: 14rem;
+}
+
+.creations-and-nav {
+    align-items: center;
+    padding: 0 0 6rem 0;
+    color: #000;
+}
+
+.creations {
+    font-size: 3.4rem;
+}
+
+.see-all1 {
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 0.6rem 3rem;
+}
+
+.main-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 2rem;
+}
+
+.creation {
+    position: relative;
+}
+
+.vignette {
+    position: relative;
+    display: inline-block;
+}
+
+.img-desktop {
+    width: 100%;
+    display: block;
+}
+
+.img-mobile,
+.creations-and-nav2 {
+    display: none;
+}
+
+.vignette::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 1);
+}
+
+.text {
+    position: absolute;
+    left: 15%;
+    bottom: 7%;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+}
+
+
+/***********************************************/
+/* FOOTER SECTION */
+/***********************************************/
+.footer {
+    background-color: #000;
+    padding: 4rem 16rem;
+}
+
+.footer-section {
+    padding-bottom: 2rem;
+}
+
+.foot-left, .foot-right {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.foot-right {
+    align-items: end;
+}
+
+.socials {
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.foot-logo {
+    width: 50%;
+}
+
+.foot-nav-list {
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.author {
+    text-decoration: none;
+}
+
+
+/***********************************************/
+/* LINKS EFFECTS */
+/***********************************************/
+a {
+    position: relative;
+}
+
+body a:active {
+    color: hsl(0, 0%, 100%);
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    background-color: hsl(0, 0%, 41%);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: all ease 0.3s;
+}
+
+a:hover {
+    color: hsl(0, 0%, 41%)
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.see-all1::after {
+    height: 0;
+    bottom: 0;
+    background-color: hsl(0, 0%, 41%);
+    z-index: -1;
+}
+
+.see-all1:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.see-all1:hover::after {
+    height: 100%;
+}
+
+.see-all1:active {
+    color: hsl(0, 0%, 0%);
+}
+
+.socials a:hover::after {
+    width: 0;
+}
+
+.foot-nav-list a::after {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.attribution a::after {
+    background-color: unset;
+}

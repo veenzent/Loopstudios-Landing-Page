@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Icon links -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- CSS links -->
+  <link rel="stylesheet" href="css/general_styles.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/querries.css">
+
+  <!-- Font Family: Alata -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+  <!-- Font Family: Josefin Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+  <body>
+    <header class="container header">
+      <section class="flex hero-section">
+        <img src="images/logo.svg" alt="loopstudious logo" class="logo">
+        <nav class="flex menu-list" id="popup">
+          <ul class="flex main-nav-list">
+              <li><a class="main-nav-link" href="#" class="link">About</a></li>
+              <li><a class="main-nav-link" href="#" class="link">Careers</a></li>
+              <li><a class="main-nav-link" href="#" class="link">Events</a></li>
+              <li><a class="main-nav-link" href="#" class="link">Products</a></li>
+              <li><a class="main-nav-link" href="#" class="link">Support</a></li>
+          </ul>
+          <a href="#" class="close">
+            <img src="./images/icon-close.svg" class="close-icon" alt="close icon">
+          </a>
+        </nav>
+        <a href="#popup" class="menu">
+          <img src="./images/icon-hamburger.svg" class="menu-icon" alt="menu icon">
+        </a>
+      </section>
+      <div class="hero-text-box">
+        <p class="hero-text">
+          Immersive experiences that deliver
+        </p>
+      </div>
+    </header>
+    <main class="container">
+      <section class="overview-section">
+        <div class="interactive-vr">
+          <img src="./images/desktop/image-interactive.jpg" alt="A male VR gamer with VR lens on, posing like a scary dragon" class="interactive-vr-img">
+          <div class="interactive-vr-text-box">
+            <p class="interactive-vr-text-caption">
+              The leader in interactive VR
+            </p>
+            <p class="interactive-vr-text">
+              Founded in 2011, Loopstudios has been producing world-class virtual reality 
+              projects for some of the best companies around the globe. Our award-winning 
+              creations have transformed businesses through digital experiences that bind 
+              to their brand.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div>
+          <div class="flex creations-and-nav">
+            <p class="default-text2 creations">Our creations</p>
+            <a href="#" class="default-text2 see-all1">See all</a>
+          </div>
+
+          <div class="main-gallery grid-helper">
+            <div class="creation">
+              <div class="vignette">
+                <img src="./images/desktop/image-deep-earth.jpg" alt="" class="img-desktop">
+                <img src="./images/mobile/image-deep-earth.jpg" alt="" class="img-mobile">
+              </div>
+              <p class="default-text2 text">Deep<br>earth</p>
+            </div>
+            <div class="creation">
+              <div class="vignette">
+                <img src="./images/desktop/image-night-arcade.jpg" alt="" class="img-desktop">
+                <img src="./images/mobile/image-night-arcade.jpg" alt="" class="img-mobile">
+              </div>
+              <p class="default-text2 text">Night<br>arcade</p>
+            </div>
+            <div class="creation">
+              <div class="vignette">
+                <img src="./images/desktop/image-soccer-team.jpg" alt="" class="img-desktop">
+                <img src="./images/mobile/image-soccer-team.jpg" alt="" class="img-mobile">
+              </div>
+              <p class="default-text2 text">Soccer<br>team VR</p>
+            </div>
+            <div class="creation">
+              <div class="vignette">
+                  <img src="./images/desktop/image-grid.jpg" alt="" class="img-desktop">
+                  <img src="./images/mobile/image-grid.jpg" alt="" class="img-mobile">
+              </div>
+              <p class="default-text2 text">The<br>grid</p>
+            </div>
+            <div class="creation">
+              <div class="vignette">
+                <img src="./images/desktop/image-from-above.jpg" alt="" class="img-desktop">
+                <img src="./images/mobile/image-from-above.jpg" alt="" class="img-mobile">
+              </div>
+              <p class="default-text2 text">From up<br>above VR</p>
+            </div>
+            <div class="creation">
+              <div class="vignette">
+                <img src="./images/desktop/image-pocket-borealis.jpg" alt="" class="img-desktop">
+                <img src="./images/mobile/image-pocket-borealis.jpg" alt="" class="img-mobile">
+              </div>
+              <p class="default-text2 text">Pocket<br>borealis</p>
+            </div>
+            <div class="creation">
+              <div class="vignette">
+                <img src="./images/desktop/image-curiosity.jpg" alt="" class="img-desktop">
+                <img src="./images/mobile/image-curiosity.jpg" alt="" class="img-mobile">
+              </div>
+              <p class="default-text2 text">The<br>curiosity</p>
+            </div>
+            <div class="creation">
+              <div class="vignette">
+                <img src="./images/desktop/image-fisheye.jpg" alt="" class="img-desktop">
+                <img src="./images/mobile/image-fisheye.jpg" alt="" class="img-mobile">
+              </div>
+              <p class="default-text2 text">Make it<br>fisheye</p>
+            </div>
+          </div>
+
+          <div class="flex creations-and-nav2">
+            <p class="default-text1 creations2">Our creations</p>
+            <a href="#" class="default-text2 see-all2">See all</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container footer">
+      <section class="flex footer-section">
+        <div class="flex foot-left foot-mobile">
+          <img src="images/logo.svg" alt="loopstudious logo" class="foot-logo">
+          <nav class="main-nav">
+            <ul class="flex foot-nav-list">
+              <li><a class="main-nav-link" href="#" class="link">About</a></li>
+              <li><a class="main-nav-link" href="#" class="link">Careers</a></li>
+              <li><a class="main-nav-link" href="#" class="link">Events</a></li>
+              <li><a class="main-nav-link" href="#" class="link">Products</a></li>
+              <li><a class="main-nav-link" href="#" class="link">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex foot-right foot-mobile">
+          <div class="flex socials">
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="facebook icon" class="fb">
+            </a>
+            <a href="#">
+              <img src="./images/icon-twitter.svg" alt="twitter icon" class="tweeter">
+            </a>
+            <a href="#">
+              <img src="./images/icon-pinterest.svg" alt="pinterest icon" class="pintrst">
+            </a>
+            <a href="#">
+              <img src="./images/icon-instagram.svg" alt="instagram icon" class="ig">
+            </a>
+          </div>
+          <div class="rights">
+            <p>&copy; 2021 Loopstudios. All rights reserved.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#" class="author">veen_zent</a>.
+      </div>
+    </footer>
+  </body>
+</html>

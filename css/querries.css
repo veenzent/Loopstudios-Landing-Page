@@ -1,5 +1,14 @@
 /* 1rem=1em=16px */
 
+/* Width: 2560px */
+@media (max-width: 160em) {
+    .container {
+        width: 100%;
+        max-width: 256rem;
+        padding: 9rem 18rem;
+    }
+}
+
 /* Width: 1259px */
 @media (max-width: 78.6875em) {
     .container {
@@ -182,6 +191,10 @@
 
     .interactive-vr-text-caption {
         padding: 6.4rem 3rem 0 3rem;
+    }
+
+    .creations-and-nav2 a:hover::after {
+        width   : 0;
     }
 }
 

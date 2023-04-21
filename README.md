@@ -78,7 +78,7 @@ The idea behind this in code:
 ```
 ```css
 /* CSS */
-/* use display positioning property to fix the menu and close icons to top right then */ :point_down: :point_down:
+/* use display positioning property to fix the menu and close icons to top right then continue below; */
 .menu-background {
   background-color: black;
   position: fixed;

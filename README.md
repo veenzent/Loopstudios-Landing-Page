@@ -78,7 +78,7 @@ The idea behind this in code:
 ```
 ```css
 /* CSS */
-/* use display positioning property to fix the menu and close icons to top right then :point_down: :point_down: */
+/* use display positioning property to fix the menu and close icons to top right then */ :point_down: :point_down:
 .menu-background {
   background-color: black;
   position: fixed;
@@ -94,7 +94,7 @@ The idea behind this in code:
   left: 0;
 }
 ```
-I also learned that on-click of an empty link (href="#") :point_down:,
+I also learned that on-click of an empty link (href="#") :point_down: :point_down:,
 ```html
 <a href="#">Empty Link</a>
 ```

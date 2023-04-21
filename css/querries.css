@@ -291,6 +291,28 @@
         margin: 2.5rem 25rem 0 25rem;
     }
 
+    .see-all2::after {
+        bottom: 0;
+        height: 0;
+        left: 0;
+        width: 100% !important;
+        background-color: hsl(0, 0%, 0%);
+        z-index: -1;
+        transition: all ease 0.5s;
+    }
+    
+    .see-all2:hover {
+        color: hsl(0, 0%, 100%) !important;
+    }
+    
+    .see-all2:hover::after {
+        height: 100%;
+    }
+    
+    .see-all2:active {
+        color: hsl(0, 0%, 0%);
+    }
+
     .footer-section {
         flex-direction: column;
         align-items: center;

@@ -158,10 +158,10 @@
         background-color: hsl(0, 0%, 0%);
         position: fixed;
         top: 0;
-        left: 100%;
+        left: -100%;
         width: 100%;
         height: 100%;
-        transition: all ease .5s;
+        /* transition: all ease .5s; */
     }
     
     .main-nav-list {

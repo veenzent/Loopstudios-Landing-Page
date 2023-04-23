@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 360px;
+    margin: 0px auto;
+}
+.header{
+    background-image: url(/Loopstudios-Landing-Page-Veencent/images/mobile/image-hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.header .heading{
+ display: flex;
+ justify-content: space-between;
+ padding: 3rem 2rem 0;
+
+ 
+}
+.header .heading.active{
+    background-color: black;
+}
+.header .heading .hamburger .bar{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: 0.5 ease-in-out;
+    transition: 0.5 ease-in-out;
+}
+.header .heading .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.header .heading .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.header .heading .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.header .heading .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    gap: 0.5rem;
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    right: -100%;
+    transition: 0.3s;
+}
+.header .heading .mobile-menu.active{
+    right: 0;
+}
+.header .heading .mobile-menu li{
+    list-style: none;
+    margin: 3rem 0 0 2rem;
+}
+.header .heading .mobile-menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.3s ease-out;    
+}
+.header .heading .mobile-menu li a:hover{
+    color: dodgerblue;
+}
+.header .hero-text{
+    color: white;
+    border: 1px solid white;
+    font-weight: lighter;
+    width: 80%;
+    margin: 9.5rem auto 0;
+    padding: 1rem;
+
+}
+
+
+
+
+
+
+
+/************************ MEDIA QUERRY ***********************/
+/************************ MEDIA QUERRY ***********************/
+/* @media (max-height: 1000px){
+    html{
+        width: 100%;
+    }
+    .header{
+        background-image: url(/Loopstudios-Landing-Page-Veencent/images/desktop/image-hero.jpg);
+    }
+    .header .heading{
+        gap: 15rem;
+        margin: 2rem 0 0 5rem;
+    }
+
+    .header .heading .hamburger{
+        display: none;
+    }
+    .header .heading .mobile-menu{
+        position: static;
+        flex-direction: row;
+        height: 2rem;
+        background-color: transparent;
+        margin-top: -2.5rem;
+        margin-left: 19rem;
+    }
+    .header .heading .mobile-menu li a{
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+} */

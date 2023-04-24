@@ -91,7 +91,47 @@ html{
 
 /************************ MEDIA QUERRY ***********************/
 /************************ MEDIA QUERRY ***********************/
-/* @media (max-height: 1000px){
+@media (max-width: 359px){
+    html{
+        width: 100%;
+        margin: 0;
+    }
+    .header .heading .loop-logo{
+        width: 7rem;
+        height: 1.5rem;
+    } 
+    .header .heading .hamburger .bar{
+        margin: 3px auto;
+    }
+    .header .heading .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .header .heading .hamburger.active .bar:nth-child(1){
+        transform: translateY(6px) rotate(45deg);
+    }
+    .header .heading .hamburger.active .bar:nth-child(3){
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    .header .heading .mobile-menu{
+        top: 4.5rem;
+    }
+    
+}
+@media (min-width: 361px) and (max-width: 414px){
+    html{
+        width: 100%;
+    } 
+    .header .hero-text{
+        margin: 12rem auto 0;
+    } 
+}
+
+@media (min-width: 415px) and (max-width: 540px){
+    html{
+        width: 100%;
+    }   
+}
+@media (min-width: 1000px){
     html{
         width: 100%;
     }
@@ -118,4 +158,16 @@ html{
         text-transform: capitalize;
         font-weight: bold;
     }
-} */
+    .header .hero-text{
+        width: 45%;
+        margin: 9.5rem 0 0 6.5rem;
+        font-size: 3.5rem;
+    }
+}
+/* @media (max-height: 1280px){
+    .header .hero-text{
+        width: 50%;
+        margin: 9.5rem 0 0 6.5rem;
+        font-size: 4.5rem;
+    }
+}  */
